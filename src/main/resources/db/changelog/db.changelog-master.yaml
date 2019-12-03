@@ -24,6 +24,19 @@ databaseChangeLog:
                   constraints:
                     nullable: false
   - changeSet:
+      id: 1.1
+      author: marceloverdijk
+      changes:
+        - insert:
+            tableName: person
+            columns:
+              - column:
+                  name: first_name
+                  value: jeff
+              - column:
+                  name: last_name
+                  value: loomis
+  - changeSet:
       id: 2
       author: marceloverdijk
       changes:
